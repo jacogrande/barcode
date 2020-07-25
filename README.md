@@ -10,13 +10,13 @@ Barcode is a tool that generates color barcodes for inputted video files. 1 fram
 Clone **barcode** into your development environment:
 
 ```
-git clone git@github.com:jacogrande/Barcode
+git clone git@github.com:jacogrande/barcode
 ```
 
 Navigate to the project directory:
 
 ```
-cd Barcode
+cd barcode
 ```
 
 ### Dependencies
