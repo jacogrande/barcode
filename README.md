@@ -3,7 +3,7 @@
 ![color barcode example](https://github.com/jacogrande/barcode/blob/master/fantastic_planet.jpg)
 *The color barcode of René Laloux's classic animated science fiction film "Fantastic Planet"*
 
-Barcode is a tool that generates color barcodes for inputted video files. 1 frame will be read per second of the video, and that frame's dominant color will be added to the barcode until the video is over.
+Barcode is a tool that generates color barcodes for inputted video files. 1 frame will be read per second of the video, and that frame's dominant color will be added to the barcode image until the video is over.
 
 ## Installation
 
@@ -36,13 +36,14 @@ pip3 install opencv-python numpy sklearn
 To run Barcode:
 
 ```
-python3 barcode.py -i <inputfile> [-k <kmeans>] [-w <frameWidth>] [-h <frameHeight] [-g] [-m]
+python3 barcode.py -i <inputfile> [-k <kmeans>] [-f <frameInterval>] [-w <frameWidth>] [-h <frameHeight] [-g] [-m]
 ```
 
 ### Arguments
 
 * **-i <inputfile**: The path to the video file you'd like to create a barcode of.
 * **-k <kmeans>** *(optional)*: The number of k-mean clusters to create per frame *(defaults to 10)*.
+* **-f <frameInterval>** *(optional)*: The time (in seconds) between frames *(defaults to 1 second)*.
 * **-w <frameWidth>** *(optional)*: The width of each inidividual barcode strip in pixels *(defaults to 1)*.
 * **-h <frameHeight>** *(optional)*: The height of each inidividual barcode strip in pixels *(defaults to 2000)*.
 * **-g** *(optional)*: Grayscale parameter. If included, a grayscale version of the barcode will also be created.

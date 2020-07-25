@@ -15,6 +15,7 @@ frame_width=0
 grayscale=False
 k=0
 vidcap=None
+interval=24
 
 def readFrame(vidcap):
   # get the current frame
@@ -22,8 +23,8 @@ def readFrame(vidcap):
   success, image = vidcap.read()
   if(success == False):
     return False
-  # if this is the first frame of the second (assuming 24fps)
-  if count % 24 == 0:
+  # capture the first frame of the given time interval
+  if count % interval == 0:
     print('read frame %d'%count)
     # convert the image to the hsv color space
     hsv_image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
@@ -56,7 +57,7 @@ def readFrame(vidcap):
         grayscale_image = np.hstack((grayscale_image, grayscale_bgr))
 
 
-def generate(input, kmeans, w, h, g):
+def generate(input, kmeans, w, h, g, i):
   # configuration
   global vidcap
   vidcap = cv2.VideoCapture(input)
@@ -68,6 +69,9 @@ def generate(input, kmeans, w, h, g):
   grayscale=g
   global k
   k=kmeans
+  global interval
+  # assuming 24 frames per second
+  interval = i*24
 
 
   global count
