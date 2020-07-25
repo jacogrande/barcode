@@ -76,7 +76,7 @@ def generate(input, kmeans, w, h, g):
     readFrame(vidcap)
     count += 1
 
-  cv2.imwrite('./output/barcode.jpg', output_image)
+  cv2.imwrite('./barcode.jpg', output_image)
   if grayscale:
-    cv2.imwrite('./output/barcode_grayscale.jpg', grayscale_image)
+    cv2.imwrite('./barcode_grayscale.jpg', grayscale_image)
 
