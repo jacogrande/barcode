@@ -1,13 +1,13 @@
-# Barcode
+# barcode
 
-![color barcode example](https://github.com/jacogrande/Barcode/blob/master/fantastic_planet.jpg)
+![color barcode example](https://github.com/jacogrande/barcode/blob/master/fantastic_planet.jpg)
 *The color barcode of René Laloux's classic animated science fiction film "Fantastic Planet"*
 
 Barcode is a tool that generates color barcodes for inputted video files. 1 frame will be read per second of the video, and that frame's dominant color will be added to the barcode until the video is over.
 
 ## Installation
 
-Clone **Barcode** into your development environment:
+Clone **barcode** into your development environment:
 
 ```
 git clone git@github.com:jacogrande/Barcode
