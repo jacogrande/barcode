@@ -21,9 +21,9 @@ cd barcode
 
 ### Dependencies
 
-Make sure you have [python 3 installed on your machine][https://www.python.org/downloads/] (this will also install pip3 on your machine, which you'll need next)
+Make sure you have [python 3 installed on your machine](https://www.python.org/downloads/) (this will also install pip3 on your machine, which you'll need next)
 
-Now, download the required python libraries ([opencv-python][https://pypi.org/project/opencv-python/], [numpy][https://numpy.org/], [sklearn][https://scikit-learn.org/stable/]):
+Now, download the required python libraries ([opencv-python](https://pypi.org/project/opencv-python/), [numpy](https://numpy.org/), [sklearn](https://scikit-learn.org/stable/)):
 
 ```
 pip3 install opencv-python numpy sklearn
